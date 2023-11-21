@@ -20,7 +20,7 @@
           <td>{{ item.chegada | date:'dd/MM/yyyy' }}</td>
           <td>{{ item.saida | date:'dd/MM/yyyy' }}</td>
           <td>
-            <button routerLink="/detalhes-viagem" class="btn btn-secondary btn-sm">
+            <button routerLink="/detalhes-viagem/{{item.id}}" class="btn btn-secondary btn-sm">
               Detalhes
             </button>
             &nbsp;&nbsp;&nbsp;

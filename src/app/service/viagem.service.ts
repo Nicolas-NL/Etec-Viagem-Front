@@ -13,4 +13,9 @@ export class ViagemService {
   listar() : Observable<any>{
     return this.http.get(this.API)
   }
+
+  buscarPorId(id : any) :  Observable<any>{
+    return this.http.get(this.API + "/" + id);
+
+  }
 }

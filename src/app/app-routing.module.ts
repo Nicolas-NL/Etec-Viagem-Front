@@ -8,8 +8,8 @@ import { ExclusaoViagemComponent } from './exclusao-viagem/exclusao-viagem.compo
 const routes: Routes = [
   {path: 'cadastro-viagem', component: CadastroViagemComponent},
   {path: 'listagem-viagem', component: ListagemViagemComponent},
-  {path: 'detalhes-viagem', component: DetalhesViagemComponent}, 
-  {path: 'exclusao-viagem', component: ExclusaoViagemComponent},
+  {path: 'detalhes-viagem/:id', component: DetalhesViagemComponent},
+  {path: 'exclusao-viagem/:id', component: ExclusaoViagemComponent},
   {path: '', redirectTo:'/listagem-viagem', pathMatch:'full'},
 ];
 
